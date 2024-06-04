@@ -1,0 +1,34 @@
+{% extends 'time_management/layout.html' %}
+
+{% block header %}
+<img src="">
+<span class="client-name">{{ user.username }}</span>
+<ul class="header-list">
+    {% comment %} <div class="light"></div> {% endcomment %}
+
+    <li class="header-link"><a href="{% url 'main' %}">Таймер</a></li>
+    <li class="header-link"><a href="{% url 'history' %}">История</a></li>
+    <li class="header-link"><a href="{% url 'logout' %}">Выйти</a></li>
+</ul>
+{% endblock %}
+{% block content %}
+
+<ul class="history-list">
+    {% for item in archive %}
+    <li class="item">
+        <span class="info">{{item.date}}</span>
+        <span class="info">{{item.start}}</span>
+        <span class="info">{{item.end}}</span>
+        <span class="info">{{item.amount}}</span>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="total"><span class="total-info">{{total_time}}</span><span class="total-info total-money">{{money}} Руб.</span></div>
+
+{% endblock %}
+
+
+
+
+

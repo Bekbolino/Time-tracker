@@ -1,0 +1,90 @@
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1c2329;
+}
+
+.message {
+    color: aliceblue;
+}
+
+.header {
+    margin: 0;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(50 50 49);
+}
+
+
+.timer-form{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.client-name {
+    color: aliceblue;
+    margin-right: auto;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+}
+
+
+.time-btn {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 40px;
+    border: none;
+    color: aliceblue;
+    background-color: green;
+    box-shadow: 0px 0px 40px 0px rgb(24 178 77 / 75%);
+}
+
+/* Login */
+
+.entrance-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.entrance-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 25px 25px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: rgb(18 16 13);
+    width: 30%;
+}
+
+.entrance-sub {
+    margin-top: 40px;
+}
+
+.entrance-text {
+    color:aliceblue;
+    margin-right: 10p;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.btn {
+    padding: 6px 30px;
+    border-radius: 15px;
+
+}

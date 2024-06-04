@@ -1,0 +1,31 @@
+{% extends 'time_management/layout.html' %}
+
+{% block header %}
+<img src="">
+<span class="client-name">{{ user.username }}</span>
+<ul class="header-list">
+    {% comment %} <div class="light"></div> {% endcomment %}
+    <li class="header-link"><a href="{% url 'history' %}">История</li>
+    <li class="header-link"><a href="{% url 'logout' %}">Выйти</a></li>
+</ul>
+{% endblock %}
+{% block content %}
+
+<div class="container timer-form">
+    
+    <h2 id="timerDisplay">00:00:00</h2>
+    <button class="time-btn">Start</button>
+    <p class="date-start"></p>
+    <p class="date-end"></p>
+
+    <div class="work-time"></div>
+</div> 
+
+
+<p class="current-time">Текущее время: <time id="currentTime"></time></p>
+{% endblock %}
+
+
+
+
+

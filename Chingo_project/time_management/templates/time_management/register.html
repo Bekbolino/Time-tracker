@@ -1,0 +1,23 @@
+{% extends 'time_management/layout.html' %}
+
+{% block content %}
+{% if problem %}
+<div class="alert alert-danger" role="alert">
+    {{ problem }}
+</div>
+{% endif %}
+
+<div class="entrance-container">
+    <form action="{% url 'register' %}" class="entrance-form" method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Введите ваше ФИО"  class="form-control">
+        <input type="text" name="email" placeholder="Email"  class="form-control">
+        <input type="text" name="password" placeholder="Введите пароль" class="form-control">
+        <input type="text" name="password_check" placeholder="Повторите пароль" class="form-control">
+        <div class="col-auto entrance-sub">
+            <button type="submit" class="btn btn-primary mb-3">Войти</button>
+        </div>
+        <p class="entrance-text">Если у вас есть аккаунт <a class="register-link" href="{% url 'login' %}">Войти</a></p>
+    </form>
+</div>
+{% endblock %}

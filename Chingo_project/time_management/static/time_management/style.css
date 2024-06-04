@@ -1,0 +1,192 @@
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dee4da;
+}
+
+.message {
+    color: aliceblue;
+}
+
+.header {
+    margin: 0;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(204 204 197);
+}
+
+#timerDisplay {
+    color: #727474;
+}
+
+.timer-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-name {
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: auto;
+}
+
+.work-time {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:aliceblue;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.history-list {
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.info {
+    font-weight: 500;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: rgb(255 237 9);
+    border-radius: 20px;
+}
+
+.work-time:first-child {
+    margin-bottom: 10px;
+}
+
+.current-time {
+    position: absolute;
+    bottom: 10px;
+    /* background-color: aquamarine; */
+    color: #727474;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-link {
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: #ecf731;
+    padding: 5px 10px;
+}
+
+#currentTime{
+    position: absolute;
+    /* bottom: 10px; */
+    margin-left: 20px;
+    font-weight: 500;
+    color: #727474;
+    margin-right: auto;
+}
+
+.time-btn {
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 40px;
+    border: none;
+    color: aliceblue;
+    background-color: green;
+    box-shadow: 0px 0px 40px 0px rgb(24 178 77 / 75%);
+}
+
+/* Login */
+
+.entrance-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.entrance-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 25px 25px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: rgb(119 118 117);
+    width: 30%;
+}
+
+.entrance-sub {
+    margin-top: 40px;
+}
+
+.entrance-text {
+    color:aliceblue;
+    margin-right: 10p;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.btn {
+    padding: 6px 30px;
+    border-radius: 15px;
+
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.total-info {
+    font-weight: 500;
+}
+
+.total-money {
+    padding: 3px 10px;
+    font-size: 17px;
+    background-color: #51e0bb;
+    border: 2px solid black;
+}
+
+.light {
+    padding: 13px 20px;
+    background-color: #e9ff26;
+    background-image: url(img/sun.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px;
+}
+
+.header-link a {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #505c67;
+}
